@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+}
+
+/* for all elements in body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+/* setting font size, color, padding, and cursor as pointer on hovering to links in navigation bar */
+nav a {
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+/* text underlined on hovering */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* setting image "google-app" size, adding padding and margin */
+nav img {
+    width: 34px;
+    padding: 5px;
+    margin: auto 7px;
+    
+}
+
+/* opacity decreased 50% on hovering and setting cursor as pointer on hovering */
+nav img:hover {
+    opacity: 0.5;
+	cursor: pointer;
+}
+
+/* adding color and background color to sign in button,  */
+nav button {
+    border: 1px #3782fc;
+    font-weight: bold;
+    background: #3782fc;
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 3px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+/* flexible positioning of elements */
+.homepage {
+    flex: auto;
+}
+
+/* setting margins for logo */
+.homepage .logo {
+    display: block;
+    margin: 100px auto 40px auto;
+}
+
+/* setting size and position of searchbar */
+.searchbar {
+	width:575px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+}
+
+/* setting size and color to text entered, padding and border radius to the searchbar */
+.searchbar .search-input {
+	display: block;
+	border: 1px solid lightgray;
+	color: black;
+	font-size: 16px;
+	padding: 13px 55px 13px 45px;
+	border-radius: 25px;
+	width: 100%;
+	outline: none;
+}
+
+/* setting shadow for searchbar */
+.searchbar  .search-input:hover {
+	box-shadow: 0 0 2px lightgray, 
+				0 0 2px lightgray,
+				0 0 3px lightgray,
+				0 0 4px lightgray, 
+				0 0 5px lightgray, 
+				0 0 4px lightgray, 
+				0 0 5px lightgray
+}
+
+/* setting size and position of search icon */
+.searchbar .search-icon {
+	width: 20px;
+	opacity: 0.4;
+	position: absolute;
+	top: 13px;
+	left: 15px;
+}
+
+/* setting size and position of mic icon */
+.searchbar .mic-icon {
+	width: 14px;
+	position: absolute;
+	top: 13px;
+	right: 20px;
+}
+
+/* setting border, font size, color, padding, margin, border radius to search buttons "Google Search" "I'm Feeling Lucky" */
+.search-button {
+	border: 1px solid transparent;
+	padding: 10px 15px;
+	color: black;
+	font-size: 14px;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 28px 10px 10px 0;
+	outline: none;
+	cursor: pointer;
+	transition: border-color 100ms;
+}
+
+/* adding a border on hovering the buttons "Google Search" "I'm Feeling Lucky" */
+.search-button:hover {
+	border: 1px solid gainsboro;
+}
+
+/* youtube icon */
+.searchbar .yt-icon {
+	width: 30px;
+	position: relative;
+	right: 3px;
+    vertical-align: middle;
+    margin: 20px 0px;
+}
+
+/* setting font size and color to text "Live!" and relatively positioning it after buttons */
+.searchbar .yt-live {
+    position: relative;
+    font-size: small;
+    color: red;
+}
+
+/* text underlined on hovering */
+.yt-live a:hover {
+	text-decoration: underline;
+}
+
+
+/* setting top margin to language section and align text in center, setting font size and color */
+.languages {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 13px;
+	color: black;
+}
+
+/* setting left margin and color to the languages' links */
+.languages a {
+	margin-left: 5px;
+	color: #1a0dab;
+}
+
+/* text underlined on hovering */
+.languages a:hover {
+	text-decoration: underline;
+}
+
+/* setting footer color */
+footer {
+	background: #f2f2f2;
+}
+
+/* setting color, font size, padding, decreasing the font weight of h4 to normal */
+footer h4 {
+	color: grey;
+	font-size: 15px;
+	padding: 15px 0 15px 30px;
+	font-weight: normal;
+}
+
+/* setting color to all the links present in footer, adding padding, and setting font size */
+footer a {
+	color: grey;
+	display: inline-block;
+	padding: 15px 20px;
+	font-size: 14px;
+}
+
+/* text underlined on hovering */
+footer a:hover {
+	text-decoration: underline;
+}
+
+/* top border to separate sections and auto flex items */
+.links {
+	border-top: 1px solid #ddd;
+	display: flex;
+}
+
+/* 30px padding from left and auto flex items */
+.part-1 {
+	padding-left: 30px;
+	flex: auto;
+}
+
+/* 30px padding from right */
+.part-2 {
+	padding-right: 30px;
+}
